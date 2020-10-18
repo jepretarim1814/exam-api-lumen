@@ -22,9 +22,6 @@ class UserController extends Controller
 
     public function allUsers()
     {
-//        $user = User::paginate(10);
-//        $resource = UserResource::collection($user);
         return DataTables::collection(User::all())->toJson();
-//        return DataTables::of($resource)->make();
     }
 }
