@@ -39,7 +39,11 @@
     ```
     php artisan migrate
     ```
-4. Serve the application by using [Laravel Homestead](http://laravel.com/docs/homestead), 
+4. Generate JWT secret key
+    ```
+    php artisan jwt:secret
+    ```
+5. Serve the application by using [Laravel Homestead](http://laravel.com/docs/homestead), 
    [Laravel Valet](http://laravel.com/docs/valet) or the built-in PHP development server:
    ```sh
    php -S localhost:8002 -t public
